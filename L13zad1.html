@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-size: 11pt;
+            color: rgb(0, 0, 102);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+    </style>
+    <title>ZAD1</title>
+</head>
+<body>
+    <h1>
+        Maciej Świtas
+    </h1>
+    <script>
+        class Osoba {
+            constructor (wzrost, wiek, imie) {
+                this.wzrost = wzrost;
+                this.wiek = wiek;
+                this.imie = imie;
+            }
+            oddchaj() {
+                alert(this.imie + " ma " + this.wiek + " lat i oddycha!");
+
+            }
+        }
+        let o1 = new Osoba("183", "16", "Grażyna");
+        let o2 = new Osoba("190", "17", "Janusz");
+        o1.oddchaj();
+        o2.oddchaj();
+    </script>
+</body>
+</html>
